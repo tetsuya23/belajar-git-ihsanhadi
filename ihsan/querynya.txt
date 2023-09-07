@@ -1,0 +1,4 @@
+SELECT * FROM `obat`
+-----------------------------
+SELECT nama_obat, dimunim FROM `obat`
+-----------------------------
