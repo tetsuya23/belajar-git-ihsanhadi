@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 07, 2023 at 09:25 AM
+-- Generation Time: Sep 11, 2023 at 03:48 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.1.17
 
@@ -117,6 +117,7 @@ CREATE TABLE `obat` (
   `keterangan_obat` text DEFAULT NULL,
   `dimunim` varchar(32) NOT NULL,
   `kadarluarsa` int(11) DEFAULT NULL,
+  `qty_stock` int(8) NOT NULL,
   `id_obat` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -124,18 +125,18 @@ CREATE TABLE `obat` (
 -- Dumping data for table `obat`
 --
 
-INSERT INTO `obat` (`id`, `nama_obat`, `keterangan_obat`, `dimunim`, `kadarluarsa`, `id_obat`) VALUES
-(1, 'bejo', 'obat untuk masuk angin', '2x1hari', 101024, 2),
-(2, 'oskadon', 'untuk obat pusing', '3sehari', 101027, 1),
-(3, 'antangin', 'obat masuk angin', '3xsehari', 101026, 2),
-(4, 'paramex', 'obat untuk pusing sebelah', '3xsehari', 101028, 4),
-(5, 'paracetamol', 'obat pusing dosis rendah', '3xsehari', 101025, 5),
-(6, 'oralit', 'obat untuk BAB', '2xsehari', 101024, 6),
-(7, 'cap kaki tiga', 'untuk meyegarkan tubuh', '1xsehari', 101028, 7),
-(8, 'sun cream', 'obat gosok', '2xsehari', 101028, 8),
-(9, 'panadol', 'obat pusing bisa sebelum makan', '2xsehari', 101025, 9),
-(10, 'bejo', 'obat penghangat badan', '2xsehari', 101024, 10),
-(11, 'diapet', 'obat untuk menahan BAB', '1xsehari', 101029, 11);
+INSERT INTO `obat` (`id`, `nama_obat`, `keterangan_obat`, `dimunim`, `kadarluarsa`, `qty_stock`, `id_obat`) VALUES
+(1, 'bejo', 'obat untuk masuk angin', '2x1hari', 2024, 11, 2),
+(2, 'oskadon', 'untuk obat pusing', '3sehari', 2027, 14, 1),
+(3, 'antangin', 'obat masuk angin', '3xsehari', 2026, 10, 2),
+(4, 'paramex', 'obat untuk pusing sebelah', '3xsehari', 2028, 26, 4),
+(5, 'paracetamol', 'obat pusing dosis rendah', '3xsehari', 2025, 15, 5),
+(6, 'oralit', 'obat untuk BAB', '2xsehari', 2024, 18, 6),
+(7, 'cap kaki tiga', 'untuk meyegarkan tubuh', '1xsehari', 2028, 9, 7),
+(8, 'sun cream', 'obat gosok', '2xsehari', 2028, 13, 8),
+(9, 'panadol', 'obat pusing bisa sebelum makan', '2xsehari', 2025, 23, 9),
+(10, 'bejo', 'obat penghangat badan', '2xsehari', 2024, 26, 10),
+(11, 'diapet', 'obat untuk menahan BAB', '1xsehari', 2029, 32, 11);
 
 -- --------------------------------------------------------
 
