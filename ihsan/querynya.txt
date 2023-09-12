@@ -1,4 +1,21 @@
+query part 1
 SELECT * FROM `obat`
 -----------------------------
 SELECT nama_obat, dimunim FROM `obat`
 -----------------------------
+
+
+UPDATE dan DELETE
+1. UPDATE `obat` SET `keterangan_obat` = 'obat pusing'
+WHERE `nama_obat` = 'oskadon'
+--------------------------------------------------------
+2. UPDATE `obat` SET `qty_stock` = '15' 
+WHERE `nama_obat` = 'cap kaki tiga'
+--------------------------------------------------------
+3. DELETE FROM `obat` WHERE id = '8'
+--------------------------------------------------------
+4. UPDATE `obat` SET  `dimunim` = '2xsehari'
+WHERE `id` = '1'
+--------------------------------------------------------
+5. UPDATE `obat` SET  `dimunim` = '3xsehari'
+WHERE `id` = '2'
