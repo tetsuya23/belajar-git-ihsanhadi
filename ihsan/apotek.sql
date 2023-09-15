@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 12, 2023 at 03:30 AM
+-- Generation Time: Sep 15, 2023 at 10:37 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.1.17
 
@@ -84,16 +84,16 @@ INSERT INTO `detail_transaksi` (`id`, `id_obat`, `id_transaksi`, `harga`) VALUES
 
 CREATE TABLE `merek_obat` (
   `id` int(11) NOT NULL,
-  `nama merek` varchar(32) DEFAULT NULL,
-  `tanggal datang` date NOT NULL,
-  `no telp` char(15) DEFAULT NULL
+  `nama_merek` varchar(32) DEFAULT NULL,
+  `tanggal_datang` date NOT NULL,
+  `no_telp` char(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `merek_obat`
 --
 
-INSERT INTO `merek_obat` (`id`, `nama merek`, `tanggal datang`, `no telp`) VALUES
+INSERT INTO `merek_obat` (`id`, `nama_merek`, `tanggal_datang`, `no_telp`) VALUES
 (1, 'oskadon', '2022-08-03', '089678016819'),
 (2, 'antangin', '2022-08-05', '08966577432'),
 (4, 'paramex', '2023-08-23', '08412345212'),
